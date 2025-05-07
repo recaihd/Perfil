@@ -1,145 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ricardo Sousa">
+  <meta name="description" content="Java Script Developer">
+  <meta name="keywords" content="admin, developer, recai">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#00BFFF">
+  <link rel="icon" href="https://i.postimg.cc/RVjPCfmF/Screenshot-20250507-192728-Cap-Cut.jpg" type="image/png">
+  <title>RecaiHD</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Ricardo Sousa">
-    <meta name="description" content="Java Script Developer">
-    <meta name="keywords" content="admin, developer, recai">
-    <meta name="robots" content="index, follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#00BFFF"> <!-- Cor da barra no mobile -->
-    <link rel="icon" href="https://i.postimg.cc/D0yBGhXB/aaaaaaaaa.jpg"> <!-- Ícone da aba --> 
-    <link rel="icon" href="https://i.postimg.cc/D0yBGhXB/aaaaaaaaa.jpg" type="image/png">
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
 
-        <title>RecaiHD</title>
+    #typewriter {
+      display: inline-block;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blinkCursor 0.8s infinite;
+    }
+
+    @keyframes blinkCursor {
+      0% { border-color: white; }
+      50% { border-color: transparent; }
+      100% { border-color: white; }
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #000;
+      border-radius: 20px;
+      box-shadow: 0 0 20px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto 0 auto;
+    }
+
+    .discord-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 0 10px #5865F2;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #5865F2;
+    }
+  </style>
 </head>
+<body>
 
-<body style="background: black;">
+  <div>
+    <img src="https://i.postimg.cc/RVjPCfmF/Screenshot-20250507-192728-Cap-Cut.jpg" width="200" height="200">
+  </div>
 
-    <div style="text-align: center;">
-        <img src="https://i.postimg.cc/D0yBGhXB/aaaaaaaaa.jpg" width="200" height="200">
+  <h1 id="typewriter"></h1>
 
+  <h3 style="margin-top: 2px;">Developer & Admin</h3>
 
-    </div>
+  <h5>
+    Olá, meu nome é Ricardo, Eu sou desenvolvedor em Java Script<br>
+    Crio sites e bots para o Discord
+  </h5>
 
-    <div style="text-align: center;">
-        <h1 style="color: white; font-family: Arial, Helvetica, sans-serif;">RecaiHD</h1>
-        <h3 style="color: white; font-family: Arial, Helvetica, sans-serif;">Java script Developer</h3>
-        <h5 style="color: white; font-family: Arial, Helvetica, sans-serif;">Olá, meu nome e ricardo, Eu sou desenvolvedor em Java Script <br> Crio sites e bots para o Discord</h5>
-      </div>      
+  <div class="social-icons">
+    <a href="https://instagram.com/recaihd" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+    </a>
+    <a href="https://youtube.com/@recaihd" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+    </a>
+    <a href="https://github.com/recaihd" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" alt="GitHub">
+    </a>
+    <a href="mailto:ricardosousapixtudo@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="E-mail">
+    </a>
+    <a href="https://discord.gg/UNuYBvZREC" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/256/2626/2626288.png" alt="Discord" width="50" height="40">
+    </a>
+  </div>
 
-    
-    
-      <style>
-        .social-icons img {
-          width: 40px;
-          margin: 0 10px;
-          transition: transform 0.3s ease;
-        }
-      
-        .social-icons img:hover {
-          transform: scale(1.2); /* aumenta o tamanho */
-        }
-      </style>
-    
+  <div class="box">
+    <img src="https://images-ext-1.discordapp.net/external/PG9ez8Jwosvn06Gkqoxw7kvtUAY1he6D826oPKQSyBA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1299698427369885756/a_14b8fffd9140fca0b234ee644fed0bd4.gif"
+         alt="Discord"
+         style="width: 90%; height: auto; border-radius: 10px;">
+  </div>
 
+  <h2>Temple of History</h2>
+  <h3 style="color: rgb(95, 95, 240); font-family: Verdana, Geneva, Tahoma, sans-serif;">Admin e Parceiro</h3>
 
+  <div>
+    <a href="https://discord.gg/mZf64r6uU7" target="_blank" class="discord-button">Entrar</a>
+  </div>
 
-    <style>
-      .social-icons a {
-        text-decoration: none; /*tira o sublinhado dos links */
+  <script>
+    const texto = "RecaiHD";
+    const velocidade = 300; // mais lento
+    const destino = document.getElementById("typewriter");
+
+    let i = 0;
+
+    function digitar() {
+      if (i < texto.length) {
+        destino.textContent += texto.charAt(i);
+        i++;
+        setTimeout(digitar, velocidade);
       }
-    
-      .social-icons img {
-        width: 40px;
-        margin: 0 10px;
-        transition: transform 0.3s ease;
-      }
-    
-      .social-icons img:hover {
-        transform: scale(1.2);
-      }
-    </style>
+    }
 
-
-    
-    
-    
-    
-      <div class="social-icons"  style="text-align: center;">
-        
-        <a href="https://instagram.com/recaihd" target="_blank">
-            
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt=Instagram" width="37" height="37" style="margin-right:10px">
-          </a>
-          
-          <a href="https://youtube.com/@recaihd" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Yotube" width="40" height="40" style="margin-right: 10px;">
-          </a>
-
-          <a href="https://github.com/recaihd" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" alt="GitHub" width="40" height="40" style="margin-right: 11px;">
-          </a>
-
-          <a href="mailto:ricardosousapixtudo@gmail.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="E-mail" width="40" height="40">
-          </a>
-
-          <a href="
-          https://discord.gg/UNuYBvZREC" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/256/2626/2626288.png" alt="Discord" width="50" height="40"></a>
-    </div>
-
-
-    
-    <div style="text-align: center;">
-      <div style="
-        width: 300px;
-        height: 300px;
-        background-color: #000;
-        border-radius: 20px;
-        box-shadow: 0 0 20px white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 40px auto 0 auto;  /* <- isso aqui abaixa só a caixa */
-      ">
-        <img 
-          src="https://images-ext-1.discordapp.net/external/PG9ez8Jwosvn06Gkqoxw7kvtUAY1he6D826oPKQSyBA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1299698427369885756/a_14b8fffd9140fca0b234ee644fed0bd4.gif" 
-          alt="Discord" 
-          style="width: 90%; height: auto; border-radius: 10px;" 
-        />
-      </div>
-    
-      <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; margin-top: 30px;">
-        Temple of History<br><h3 style="color: rgb(95, 95, 240); font-family: Verdana, Geneva, Tahoma, sans-serif;">Admin e Parceiro</h3>
-      </h2>
-
-      <div style="text-align: center; margin-top: 10px;">
-        <a href="https://discord.gg/mZf64r6uU7" target="_blank"
-           style="display: inline-block; padding: 10px 20px; background-color: #5865F2; color: white; text-decoration: none; border-radius: 8px; font-family: Arial, sans-serif; font-weight: bold; box-shadow: 0 0 10px #5865F2; transition: all 0.3s ease; transform: scale(1);"
-           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px #5865F2';"
-           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px #5865F2';">
-          Entrar
-        </a>
-      </div>
-      
-      
-      
-    </div>
-    
-    
-     
-    
-
-    
-
-    
-
+    digitar();
+  </script>
 
 </body>
-
 </html>
