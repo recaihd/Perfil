@@ -60,6 +60,12 @@
       margin: 40px auto 0 auto;
     }
 
+    .imagem-box {
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
     .discord-button {
       display: inline-block;
       padding: 10px 20px;
@@ -113,22 +119,26 @@
     </a>
   </div>
 
+  <!-- Box com conteúdo inicial de Porkinbr -->
   <div class="box">
-    <img src="https://images-ext-1.discordapp.net/external/PG9ez8Jwosvn06Gkqoxw7kvtUAY1he6D826oPKQSyBA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1299698427369885756/a_14b8fffd9140fca0b234ee644fed0bd4.gif"
-         alt="Discord"
-         style="width: 90%; height: auto; border-radius: 10px;">
+    <img id="imagem-box" class="imagem-box"
+         src="https://i.postimg.cc/dQTd5N2n/iconporkinbr.png"
+         alt="Imagem dinâmica">
   </div>
 
-  <h2>Temple of History</h2>
-  <h3 style="color: rgb(95, 95, 240); font-family: Verdana, Geneva, Tahoma, sans-serif;">Admin e Parceiro</h3>
+  <h2 id="titulo-box">Porkinbr</h2>
+  <h3 id="subtitulo-box" style="color: rgb(95, 95, 240); font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    Ex-ajudante
+  </h3>
 
   <div>
-    <a href="https://discord.gg/mZf64r6uU7" target="_blank" class="discord-button">Entrar</a>
+    <a id="botao-box" href="https://discord.gg/QJVBftSRmV" target="_blank" class="discord-button">Entrar</a>
   </div>
 
   <script>
+    // Efeito máquina de escrever
     const texto = "RecaiHD";
-    const velocidade = 300; // mais lento
+    const velocidade = 300;
     const destino = document.getElementById("typewriter");
 
     let i = 0;
@@ -142,6 +152,38 @@
     }
 
     digitar();
+
+    // Carrossel de imagem + texto + botão
+    const dadosBox = [
+      {
+        imagem: "https://i.postimg.cc/dQTd5N2n/iconporkinbr.png",
+        titulo: "Porkinbr",
+        subtitulo: "Ex-ajudante",
+        link: "https://discord.gg/QJVBftSRmV"
+      },
+      {
+        imagem: "https://images-ext-1.discordapp.net/external/PG9ez8Jwosvn06Gkqoxw7kvtUAY1he6D826oPKQSyBA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1299698427369885756/a_14b8fffd9140fca0b234ee644fed0bd4.gif",
+        titulo: "Temple of History",
+        subtitulo: "Admin e Parceiro",
+        link: "https://discord.gg/mZf64r6uU7"
+      },
+      {
+        imagem: "https://i.postimg.cc/YSX42Zgc/iconrecaihd.gif",
+        titulo: "RecaiHD",
+        subtitulo: "Dono",
+        link: "https://discord.gg/UNuYBvZREC"
+      }
+    ];
+
+    let boxIndex = 0;
+
+    setInterval(() => {
+      boxIndex = (boxIndex + 1) % dadosBox.length;
+      document.getElementById("imagem-box").src = dadosBox[boxIndex].imagem;
+      document.getElementById("titulo-box").innerText = dadosBox[boxIndex].titulo;
+      document.getElementById("subtitulo-box").innerText = dadosBox[boxIndex].subtitulo;
+      document.getElementById("botao-box").href = dadosBox[boxIndex].link;
+    }, 5000);
   </script>
 
 </body>
