@@ -88,7 +88,7 @@
     #membros-box {
       color: #ccc;
       font-size: 16px;
-      margin-top: -3px;
+      margin-top: 3px;
       margin-bottom: 10px;
     }
   </style>
@@ -135,11 +135,11 @@
   <!-- Título do servidor -->
   <h2 id="titulo-box">Porkinbr</h2>
 
-  <!-- Quantidade de membros (logo abaixo do título) -->
+  <!-- Quantidade de membros -->
   <h4 id="membros-box">+20.000 membros</h4>
 
-  <!-- Subtítulo -->
-  <h3 id="subtitulo-box" style="color: rgb(95, 95, 240); font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  <!-- Subtítulo com cor dinâmica -->
+  <h3 id="subtitulo-box" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
     Ex-ajudante
   </h3>
 
@@ -169,6 +169,7 @@
         titulo: "Porkinbr",
         membros: "+20.000 membros",
         subtitulo: "Ex-ajudante",
+        corSubtitulo: "#ff0000",
         link: "https://discord.gg/QJVBftSRmV"
       },
       {
@@ -176,6 +177,7 @@
         titulo: "Temple of History",
         membros: "+80 membros",
         subtitulo: "Admin e Parceiro",
+        corSubtitulo: "#00ffee",
         link: "https://discord.gg/mZf64r6uU7"
       },
       {
@@ -183,6 +185,7 @@
         titulo: "RecaiHD",
         membros: "+200 membros",
         subtitulo: "Dono",
+        corSubtitulo: "#00ffee",
         link: "https://discord.gg/UNuYBvZREC"
       }
     ];
@@ -195,6 +198,7 @@
       document.getElementById("titulo-box").innerText = dadosBox[boxIndex].titulo;
       document.getElementById("membros-box").innerText = dadosBox[boxIndex].membros;
       document.getElementById("subtitulo-box").innerText = dadosBox[boxIndex].subtitulo;
+      document.getElementById("subtitulo-box").style.color = dadosBox[boxIndex].corSubtitulo;
       document.getElementById("botao-box").href = dadosBox[boxIndex].link;
     }, 5000);
   </script>
