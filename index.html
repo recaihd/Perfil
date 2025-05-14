@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#00BFFF">
-  <link rel="icon" href="https://i.postimg.cc/RVjPCfmF/Screenshot-20250507-192728-Cap-Cut.jpg" type="image/png">
+  <link rel="icon" href="https://i.postimg.cc/3xx6LDDs/5cbce30f-2883-4a93-91d2-cf220d0836eb.png" type="image/png">
   <title>RecaiHD</title>
 
   <style>
@@ -96,7 +96,7 @@
 <body>
 
   <div>
-    <img src="https://i.postimg.cc/RVjPCfmF/Screenshot-20250507-192728-Cap-Cut.jpg" width="200" height="200">
+    <img src="https://i.postimg.cc/3xx6LDDs/5cbce30f-2883-4a93-91d2-cf220d0836eb.png" width="200" height="200">
   </div>
 
   <h1 id="typewriter"></h1>
@@ -192,6 +192,15 @@
 
     let boxIndex = 0;
 
+    // Aplica os dados iniciais logo ao carregar
+    document.getElementById("imagem-box").src = dadosBox[0].imagem;
+    document.getElementById("titulo-box").innerText = dadosBox[0].titulo;
+    document.getElementById("membros-box").innerText = dadosBox[0].membros;
+    document.getElementById("subtitulo-box").innerText = dadosBox[0].subtitulo;
+    document.getElementById("subtitulo-box").style.color = dadosBox[0].corSubtitulo;
+    document.getElementById("botao-box").href = dadosBox[0].link;
+
+    // Atualiza os dados a cada 5 segundos
     setInterval(() => {
       boxIndex = (boxIndex + 1) % dadosBox.length;
       document.getElementById("imagem-box").src = dadosBox[boxIndex].imagem;
