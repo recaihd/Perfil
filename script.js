@@ -31,27 +31,20 @@
         link: "https://discord.gg/UNuYBvZREC"
       },
       {
-        imagem: "https://images-ext-1.discordapp.net/external/PG9ez8Jwosvn06Gkqoxw7kvtUAY1he6D826oPKQSyBA/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1299698427369885756/a_14b8fffd9140fca0b234ee644fed0bd4.gif",
+        imagem: "https://i.postimg.cc/FKmPpCMf/redefenix-ico.png",
+        titulo: "Redefênix",
+        membros: "+250 membros",
+        subtitulo: "Moderador",
+        corSubtitulo: "#68d14f",
+        link: "https://discord.gg/RMK4dnm7Cg"
+      },
+      {
+        imagem: "https://i.postimg.cc/BQwbpztm/templeofhistory.gif",
         titulo: "Temple of History",
         membros: "+80 membros",
         subtitulo: "Admin e Parceiro",
         corSubtitulo: "#00ffee",
         link: "https://discord.gg/mZf64r6uU7"
-      },
-      {
-        imagem: "https://i.postimg.cc/Gh9TZ315/XRecorder-Edited-20250519-01.jpg",
-        titulo: "Cidade da Nira",
-        membros: "+10 membros",
-        subtitulo: "Dono",
-        corSubtitulo: "#00ffee",
-        link: "https://discord.gg/2VcjePbmye"
-      },
-      {
-        imagem: "https://i.postimg.cc/FHRsfDyy/8335-developer.png",
-        titulo: "Developer Discord",
-        membros: "+5 membros",
-        subtitulo: "Dono",
-        link: "https://discord.gg/eSfH9NqhDw"
       }
     ];
 
